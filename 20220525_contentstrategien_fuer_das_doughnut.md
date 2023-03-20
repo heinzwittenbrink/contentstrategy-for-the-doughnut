@@ -7,7 +7,7 @@ link-citations: true
 
 Die Disziplin der Contentstrategie trägt einen kleinen Teil zu der *großen Beschleunigung* bei, welche die Bewohnbarkeit der Erde immer spürbarer gefährdet.[^buchpublikation] [^great_acceleration] Contentstrategie als Modernisierungsbewegung innerhalb der digitalen Kommunikation und des digitalen Designs ist angesichts sich verstärkender ökologisch-sozialer Risiken so wenig überlebensfähig wie die auf Wachstum ausgerichtete Wirtschaft als ganze. Wenn Erfahrungen der Krise, des Verlusts und der Resilienz die modernen Erzählungen von der Zukunft als optimierter Gegenwart ablösen, verlieren die gewohnten Strategien für digitale Inhalte ihre Basis. Die Alternative zu ihnen bilden Contentstrategien, die verantwortliches, regeneratives Handeln unterstützen. Sie sind auf Wiedernutzbarkeit ausgerichtet, minmalistisch und offen für unterschiedliche lokale Kontexte.
 
-[^buchpublikation]: Dieser Aufsatz ist gedruckt in dem Buch „Das Klima der Kommunikation“ [@fischerKlimaKommunikation202022] erschienen [@wittenbrinkContentstrategienFuerDoughnut2022]. Diese digitale Version entspricht bis auf die dort in den Fließtext integrierten Anmerkungen der gedruckten Version. 
+[^buchpublikation]: Dieser Aufsatz ist gedruckt in dem Buch „Das Klima der Kommunikation“ [@fischerKlimaKommunikation202022] erschienen [@wittenbrinkContentstrategienFuerDoughnut2022]. Diese digitale Version entspricht bis auf die dort in den Fließtext integrierten Anmerkungen der gedruckten Version. Aktualisierungen, weitere Versionen und begleitende Präsentationen sind in diesem Github-Repository zu finden: <https://github.com/heinzwittenbrink/contentstrategy-for-the-doughnut>.
 
 ## Der Doughnut: eine Alternative zur Zerstörung des Planeten
 
