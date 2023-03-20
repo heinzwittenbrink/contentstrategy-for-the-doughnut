@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Heinz Wittenbrink" />
+  <meta name="dcterms.date" content="2023-03-17" />
+  <title>Contenstrategien für den Doughnut</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Contenstrategien für den Doughnut</h1>
+<p class="author">Heinz Wittenbrink</p>
+<p class="date">2023-03-17</p>
+</header>
+<p>Die Disziplin der Contentstrategie trägt einen kleinen Teil zu der <em>großen Beschleunigung</em> bei, welche die Bewohnbarkeit der Erde immer spürbarer gefährdet.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Contentstrategie als Modernisierungsbewegung innerhalb der digitalen Kommunikation und des digitalen Designs ist angesichts sich verstärkender ökologisch-sozialer Risiken so wenig überlebensfähig wie die auf Wachstum ausgerichtete Wirtschaft als ganze. Wenn Erfahrungen der Krise, des Verlusts und der Resilienz die modernen Erzählungen von der Zukunft als optimierter Gegenwart ablösen, verlieren die gewohnten Strategien für digitale Inhalte ihre Basis. Die Alternative zu ihnen bilden Contentstrategien, die verantwortliches, regeneratives Handeln unterstützen. Sie sind auf Wiedernutzbarkeit ausgerichtet, minmalistisch und offen für unterschiedliche lokale Kontexte.</p>
+<section id="der-doughnut-eine-alternative-zur-zerstörung-des-planeten" class="level3">
+<h3>Der Doughnut: eine Alternative zur Zerstörung des Planeten</h3>
+<p>Seit diesem Frühjahr wissen wir, dass die Erde zwei weitere der neun planetaren Belastungsgrenzen überschritten hat – die Grenze für <em>grünes Wasser</em> und die Grenze für neuartige, also technisch erzeugte Substanzen. Die Überschreitung der Grenze für <em>grünes Wasser</em> – das Süsswasser in der Wurzelzone der Vegetation – bedeutet: Im globalen Durchschnitt erhalten die Wurzeln der Pflanzen deutlich mehr oder weniger Wasser als noch vor wenigen Jahrzehnten. Das überfordert ihre Fähigkeit, sich anzupassen <span class="citation" data-cites="wang-erlandssonPlanetaryBoundaryGreen2022">(<a href="#ref-wang-erlandssonPlanetaryBoundaryGreen2022" role="doc-biblioref">Wang-Erlandsson et al., 2022</a>)</span>. Mit der Überschreitung der Grenze für <em>Novel Substances</em> ist gemeint: Die Masse der von Menschen künstlich erzeugten Stoffe – von den Antibiotika bis zum Mikroplastik – ist so groß, dass überall auf dem Planeten spürbare und irreversible ökologische Veränderungen zu befürchten sind <span class="citation" data-cites="perssonOutsideSafeOperating2022">(<a href="#ref-perssonOutsideSafeOperating2022" role="doc-biblioref">Persson et al., 2022</a>)</span>.</p>
+<p><em>Süßwasser</em> und <em>neuartige Substanzen</em> bezeichnen zwei der neun planetaren Grenzen, die Erdsystemwissenschaftler seit 2009 herausgearbeitet haben <span class="citation" data-cites="steffenPlanetaryBoundariesGuiding2015">(<a href="#ref-steffenPlanetaryBoundariesGuiding2015" role="doc-biblioref">Steffen, Richardson, et al., 2015</a>)</span>. Die Überschreitung dieser Grenzen führt dazu, dass das Erdsystem einen Zustand relativen Gleichgewichts verlässt. Das Erdsystem unterscheidet sich schon jetzt deutlich von dem Zustand, in dem sich die menschliche Zivilisation entwickelt hat, dem des Holozän. Die Gesellschaften müssen auf diese Veränderungen reagieren. Noch ist es möglich, im Anthropozän – wie die neue Epoche von vielen Erdsystemwissenschaftlern genannt wird – einen Zustand zu erreichen, der dem Holozän ähnlich ist, aber von menschlichen Interventionen, von “human stewardship” abhängig ist <span class="citation" data-cites="steffenTrajectoriesEarthSystem2018">(<a href="#ref-steffenTrajectoriesEarthSystem2018" role="doc-biblioref">Steffen et al., 2018</a>)</span>.</p>
+<p>Die öffentlich am meisten diskutierte Folge einer Überschreitung der planetaren Grenzen ist die Klimakrise. Das Verbrennen von Kohle, Gas und Öl, die veränderte Landnutzung durch die industrielle Landwirtschaft und das Bauen mit Zement pumpen so viel CO<sub>2</sub>, Methan und Stickoxid in die Atmosphäre, dass die Temperaturen schneller ansteigen als in der gesamten bekannten Menschheitsgeschichte. Es hängt von der Politik dieses und weniger kommender Jahre ab, ob dieser Prozess noch so gebremst wird, dass ein Kollaps der menschlichen Zivilisation unwahrscheinlicher wird <span class="citation" data-cites="ipccSummaryPolicymakers2022">(<a href="#ref-ipccSummaryPolicymakers2022" role="doc-biblioref">IPCC, 2022</a>)</span>.</p>
+<p>Die Belastung der Atmosphäre mit Treibhausgasen ist dabei nicht einmal die riskanteste Überschreitung der planetaren Grenzen. Bei der Zerstörung der Biodiversität und bei der Veränderung des Phosphor- und Stickstoffzyklus haben wir die höchste Risikostufe bereits erreicht.</p>
+<p>Diese dramatische Entwicklung ist bedingt durch das Wachstum dessen, was wir <em>die Wirtschaft</em> nennen. Zur Etablierung der Wirtschaft, als eines eigenen Bereichs mit scheinbar eigenen Gesetzen, kam es erst in der Mitte des vergangenen Jahrhunderts – in einem engen Zusammenhang mit dem Übergang zu Öl und Gas als den wichtigsten, transportablen und scheinbar unbegrenzten Energieträgern. Erst seit damals wird das Bruttosozialprodukt gemessen. Politisches Handeln wurde zunehmend zum richtigen Umgang mit <em>der Wirtschaft</em>, von deren Funktionieren die Zustimmung der Bevölkerung vor allem in den reichen Ländern abhing. Unter dem Namen <em>Development</em> wurde dieses Modell auf die nichtindustrialisierten Länder übertragen, von deren Ressourcen <em>die Wirtschaft</em> der reichen Länder abhängt <span class="citation" data-cites="mitchellCarbonDemocracyPolitical2011">(<a href="#ref-mitchellCarbonDemocracyPolitical2011" role="doc-biblioref">Mitchell, 2011</a>)</span>.</p>
+<p>In das Wissen der in <em>der Wirtschaft</em> Agierenden fanden und finden ökologische Entwicklungen meist keinen Eingang. Wirtschaft wurde in der Theorie und in der Praxis als eigener Bereich gestaltet, in dem sich Akteure wirtschaftlich rational oder nicht rational verhalten. Die wechselseitigen Abhängigkeiten zwischen biophysikalischen Systemen und dem als <em>die Wirtschaft</em> Zusammengefassten wurden – und werden – ignoriert. Diese Verselbständigung <em>der Wirtschaft</em> und der wirtschaflich Agierenden, z.B. der Firmen und Konzerne, gefährdet heute die Bewohnbarkeit des Planeten.</p>
+<p>Kate Raworth hat mit den <em>Doughnut Economics</em> <span class="citation" data-cites="raworthDoughnutEconomicsSeven2017">(<a href="#ref-raworthDoughnutEconomicsSeven2017" role="doc-biblioref">2017</a>)</span> eine Alternative zu diesem Modell einer von ihren Voraussetzungen abgekoppelten ökonomischen Sphäre vorgeschlagen. Der ringförmige Doughnut ist ein Bild dafür, dass Wirtschaft zwischen zwei Grenzen stattfindet: einer äußeren, die von den planetaren Belastungsgrenzen gebildet wird, und der inneren Grenze der Sustainable Development Goals der Vereinten Nationen <span class="citation" data-cites="17GOALSSustainable">(<a href="#ref-17GOALSSustainable" role="doc-biblioref"><em>THE 17 GOALS | Sustainable Development</em>, n.d.</a>)</span>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Wenn die innere Grenze nicht unterschritten wird, ist ein menschenwürdiges Leben für alle gesichert.</p>
+<p>Der Doughnut ist ein globales Modell, das sich aber auf Länder, Regionen und Städte hinunterskalieren lässt. So hat sich die Amsterdam für die Umsetzung des <em>Amsterdam City Doughnut</em> entschieden <span class="citation" data-cites="doughnuteconomicsactionlabAmsterdamCityDoughnut2020">(<a href="#ref-doughnuteconomicsactionlabAmsterdamCityDoughnut2020" role="doc-biblioref">Doughnut Economics Action Lab, 2020</a>)</span>.</p>
+<p>Der Doughnut dient als Bild für eine Wirtschaft, das die Erde als bewohnbare Planeten erhält und ein menschenwürdiges Leben für alle sicherstellt. Es stellt die Ziele einer solchen Wirtschaft verständlich dar und macht es möglich zu bewerten, ob sie erreicht werden.</p>
+<p>Ich möchte fragen, wie Contentstrategie in einer solchen Doughnut-Wirtschaft aussehen könnte und was sie von dem unterscheidet, was wir jetzt als Contentstrategie praktizieren. Damit ist nicht gesagt, dass Contentstrategie von einem bestimmten Modell der Umsetzung des Doughnut abhängt.</p>
+<p>Allerdings ist es sinnvoll, auf eine Einschränkung hinzuweisen: <em>Die Wirtschaft</em> und <em>die Märkte</em> funktionieren nach scheinbar allgemeingültigen, globalen Regeln. Der Doughnut muss lokal umgesetzt werden; im Doughnut ist das, was als <em>Wirtschaft</em> gilt, nicht überall dasselbe. Abhängig von Ökosystemen, aber auch z.B. von der Branche, kann sehr unterschiedlich vorgegangen werden. Deshalb lässt sich eine Contentstrategie für den Doughnut nur spezifisch entwickeln, für bestimmte Situationen, deren Skalierbarkeit nicht selbstverständlich ist.</p>
+</section>
+<section id="contentstrategie-jenseits-des-wachstums" class="level3">
+<h3>Contentstrategie jenseits des Wachstums</h3>
+<p>Der Ausdruck <em>Contenstrategie</em> bezeichnet sehr unterschiedliche Praktiken <span class="citation" data-cites="batovaIntroductionSpecialIssue2016">(<a href="#ref-batovaIntroductionSpecialIssue2016" role="doc-biblioref">Batova &amp; Andersen, 2016</a>)</span>. Gemeinsam ist ihnen, dass in einer Organisation Inhalte als digitale Artefakte manipuliert und administriert werden. Notwendig ist das bisher vor allen in der technischen Dokumentation, bei der Kommunikation und Selbstdarstellung im Web und beim Online-Marketing – wobei es Überschneidungen zwischen diesen Bereichen gibt. Contentstrateginnen und -strategen besitzen die inhaltsbezogene Expertise für die Arbeiten in diesen Bereichen. Ein wichtiger Teil dieser Expertise ist Wissen über den Umgang von Userinnen und Usern mit Inhalten.</p>
+<p>Contentstrategie ist vor allem da relevant, wo digitale Inhalte nicht das Kernangebot einer Firma oder Organisation bilden, sondern andere Dienstleistungen und Produkte begleiten und unterstützen. Das Wissen von Contentstrateginnen und -strategen hat viele Ähnlichkeiten mit dem redaktionellen Wissen in Verlagen. Dieses Wissen wird in der Contentstrategie in die Kontexte der digitalen Kommunikation von Unternehmen und anderen Organisationen übertragen. Weder der Verkauf noch die Nutzung von Produkten und Dienstleistungen sind heute ohne digitale Inhalte möglich.</p>
+<p>In ihrer aktuellen Praxis setzt Contentstrategie meist die profitorientierte Firma oder die bürokratische Organisation voraus, wobei beides miteinander verbunden sein kann. Der Content, um den sie sich kümmert, richtet sich entweder an Kundinnen und Kunden und unterstützt den Verkauf oder die Nutzung von Produkten, oder an Bürgerinnen und Bürger, die Leistungen einer ganz oder teilweise digitalisierten Verwaltung in Anspruch nehmen. Vor allem in den letzten Jahren wurde das digitale Marketing von zu einem der wichtigsten Arbeitsfelder für Contentstrateginnen und -strategen in Unternehmen. Verwandt mit der Arbeit im Marketing von Firmen sind die Tätigkeiten im Campaigning von NGOs und Parteien.</p>
+<p>Allen diesen Arbeitsfeldern gemeinsam ist eine Zukunftsorientierung, bei der Contentstrategie dabei mitwirkt, eine verbesserungsbedürftige oder mangelhafte Gegenwart durch einen Zustand mit mehr und besseren Angeboten und Möglichkeiten zu ersetzen. Dabei liegt der Fokus auf dem Beitrag, den die Organisation, für die Contentstrategie betrieben wird, zu dieser besseren Zukunft leistet. Contentstrategie ist Teil des Fortschritts, der von der Gegenwart in die Zukunft führt, und zu dem die Inhalte von Firmen oder Organisationen einen relevanten Beitrag leisten. Damit ist sie eine durchaus moderne Disziplin, vergleichbar mit anderen modernen Sparten des Design.</p>
+<p>Versteht man die ökologischen Krisen, zu denen das Überschreiten der planetaren Grenze führt, nur als Anlass für eine Umsteuerung auf diesem Weg in die bessere Zukunft, dann ändert sich dadurch für die Aufgaben der Contentstrategie nur wenig. Die Produkte und Dienstleistungen, für die Contentstrategie betrieben wird, werden nachhaltiger und grüner, die politischen Zielsetzungen der Verwaltungen, Parteien oder NGOs, die eine Contentstrategie benötigen, werden ökologischer. Die Aufgaben der Inhalte und die Rollen der Contentstrategie werden dadurch aber nicht in Frage gestellt.</p>
+<p>Das Bild der Doughnut-Wirtschaft steht allerdings im Widerspruch zu der Erzählung vom linearen Weg in eine bessere Zukunft. In einer Doughnut-Wirtschaft sind Fortschritte möglich und da erwünscht, wo die innere Grenze des Doughnut nicht erreicht wird. Die Veränderungen in einer Doughnut-Wirtschaft entsprechen eher denen in Ökosystemen, in denen Evolutionen stattfinden, in denen es aber keine übergreifende Perspektive gibt, aus der heraus man von einem Gesamtfortschritt sprechen könnte. Angesichts der Risiken durch die Überschreitung der planetaren Grenzen sind die Rücknahme von Wachstumsprozessen und vor allem Resilienz erforderlich, also die Fähigkeit, Risiken zu bewältigen. Resilienz, Regeneration und Evolution, die alle mit der biologischen Wirklichkeit verbunden sind, passen nicht zum Modell des linearen Wachstums.</p>
+<p>Diese Veränderungen in grundlegenden Bildern und Erzählungen stellen die Disziplin der Contentstrategie in Frage. Welche Firma, welches Produkt oder welche Dienstleistung trägt nicht zur weiteren Zerstörung des Planeten bei? Ist das Modell der kapitalistischen Firma selbst, die in die Zukunft investiert und damit den Handel mit Anteilen an der Zukunft in der Gegenwart ermöglicht <span class="citation" data-cites="mitchellBodyPoliticThat2020">(<a href="#ref-mitchellBodyPoliticThat2020" role="doc-biblioref">Mitchell, 2020</a>)</span>, nicht eine entscheidende Ursache für die <em>große Beschleunigung</em>, die zum Überschreiten der planetaren Belastungsgrenzen geführt hat? Passen die hierarchischen Beziehungen zwischen Firmen und Organisationen auf der einen Seite und Kundinnen/Kunden oder Regierten auf der anderen Seite in eine ökologische Kultur, bei der alle dafür verantwortlich sind, dass Ressourcen geschont werden und sich regenerieren <span class="citation" data-cites="ostromPolycentricSystemsCoping2010">(<a href="#ref-ostromPolycentricSystemsCoping2010" role="doc-biblioref">Ostrom, 2010</a>)</span>?</p>
+<p>Um zu überlegen, welchen Platz Contentstrategie in einer Doughnut-Wirtschaft hätte, ist ein gemeinsamer Bezugsrahmen nötig, der es erlaubt die Rollen zu vergleichen, die sie in der jetzigen Wirtschaft - der <em>doomsday machine</em> <span class="citation" data-cites="KickItManifesto2010">(<a href="#ref-KickItManifesto2010" role="doc-biblioref"><em>Against Mainstream Economics</em>, 2010</a>)</span> – und in alternativen Strukturen hat, die die Bewohnbarkeit des Planeten sichern. Als einen solchen Bezugsrahmen möchte ich das Konzept des <em>Versorgungssystem</em> vorschlagen, wie es in dem Forschungsprojekt <em>Living well within limits</em> <span class="citation" data-cites="LivingWellLimits">(<a href="#ref-LivingWellLimits" role="doc-biblioref"><em>Living Well Within Limits [LiLi] : Homepage of the LiLi Leverhulme Research Leadership Award Project</em>, n.d.</a>)</span> benutzt wird <span class="citation" data-cites="vogelSocioeconomicConditionsSatisfying2021">(<a href="#ref-vogelSocioeconomicConditionsSatisfying2021" role="doc-biblioref">Vogel et al., 2021</a>)</span>. Gemeint sind damit die Systeme, die zwischen den planetaren Systemen (z.B. dem Süßwasserzyklus) und dem menschlichen Wohlbefinden (zu dem z.B. das Verwenden von Trinkwasser gehört) vermitteln. Zu ihnen gehören physikalische (z.B. das Grundwasser) wie soziale Komponenten (z.B. Wasserrechte), wobei sich der Ressourcenverbrauch quantifizieren lässt <span class="citation" data-cites="oneillGoodLifeAll2018">(<a href="#ref-oneillGoodLifeAll2018" role="doc-biblioref">O’Neill et al., 2018</a>)</span>. Der Ausdruck <em>Versorgungssysteme</em> legt Contentstrategie nicht vorschnell auf Unternehmen und andere bereits bekannte Organisationsformen fest.</p>
+<p>Unsere derzeitigen Versorgungssysteme sind mit den planetaren Grenzen unvereinbar. Sie schaffen es aber auch nicht, die Sustainable Development Goals einzuhalten. Eine Doughnut-Wirtschaft muss die Versorgungssysteme eingreifend verändern. Über eine <em>Contentstrategie für die Doughnut-Wirtschaft</em> nachzudenken bedeutet deshalb zu überlegen, welche Aufgaben Contentstrategie für ökologische und menschenwürdige Versorgungssysteme übernehmen kann.</p>
+</section>
+<section id="transparenz-über-ressourcenverbrauch" class="level3">
+<h3>Transparenz über Ressourcenverbrauch</h3>
+<p>Eine Contentstrategie für die Doughnut-Wirtschaft muss vor allem daran mitwirken, dass die Versorgung für alle Mitglieder einer Gesellschaft funktioniert und dabei nach Möglichkeit mehr Ressourcen regeneriert als verbraucht werden. Eine Voraussetzung dafür ist, dass der Ressourcenverbrauch transparent ist, und zwar in allen Aspekten und in allen Phasen. Wer Produkte oder einen Service anbietet, muss sicherstellen, dass durch dieses Angebot kein nicht wieder gut zu machender Schaden entsteht.</p>
+<p>Durch diese Anforderung erhält die Contenstrategie eine Ebene wissenschaftlicher Überprüfbarkeit. Die Folgen eines Angebots liegen ebenso in der Verantwortung des Anbietenden wie die Information über diese Folgen.</p>
+<p>Dabei muss sichergestellt werden, dass sich Anbietende nicht selbst beglaubigen. Für die Contentstrategie bedeutet das, dass Wahrheit zu einer entscheidenden Qualität der Inhalte wird. In der vorhandenen Literatur zur Contentstrategie wird Wahrheit als Qualität von Inhalten dagegen kaum erwähnt – allenfalls als Aufgabe für Subject Matter Experts. <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+</section>
+<section id="servicedesign-für-regenerative-versorgung" class="level3">
+<h3>Servicedesign für regenerative Versorgung</h3>
+<p>Contentstrategie für Unternehmen dient im Augenblick vor allem dazu, Angebote so gut nutzbar und damit so attraktiv wie möglich zu machen. Da es zu fast jedem Produkt und zu fast jeder Dienstleistung heute digitale Schnittstellen gibt und jedes Produkt allein damit Teil eines Service ist, der über der Kauf der Produkts hinausgeht, kann man die Contenstrategie auch als eine Komponente des Service Design verstehen. Contentstrategie ist Service Design mit Inhalten <span class="citation" data-cites="wittenbrinkContentStrategieAlsService2018">(<a href="#ref-wittenbrinkContentStrategieAlsService2018" role="doc-biblioref">Wittenbrink, 2018</a>)</span>. Zum Service Design gehört die Gestaltung des Frontends und des Backends der verschiedenen Berührungspunkte mit einem Inhalt.</p>
+<p>Die Versorgungssysteme der Doughnut-Wirtschaft benötigen ein Service Design, das es einfach und attraktiv macht, so wenig Ressourcen wie nötig zu nutzen und die genutzten Ressourcen in regenerativen Kreisläufen weiterzuverwenden. Diese Aufgabe unterscheidet sich nicht grundlegend vom bisherigen Service Design. Inhalte bekommen aber zusätzliche Aufgaben bei der Dematerialisierung von Angeboten und bei ihrer Verknüpfung mit regenerativen Services. Sie dienen dazu, Ressourcen einzusparen und wiederzuverwenden.</p>
+<p>Die Websites von Fairphone <span class="citation" data-cites="FairphoneSmartphoneSich">(<a href="#ref-FairphoneSmartphoneSich" role="doc-biblioref"><em>Fairphone | Das Smartphone, das sich für Mensch und Umwelt einsetzt</em>, n.d.</a>)</span> und Patagonia <span class="citation" data-cites="PatagoniaOutdoorBekleidungAusruestung">(<a href="#ref-PatagoniaOutdoorBekleidungAusruestung" role="doc-biblioref"><em>Patagonia Outdoor-Bekleidung &amp; Ausrüstung</em>, n.d.</a>)</span> enthalten Beispiele eines solchen regenerativen Servicedesigns unter aktuellen Bedingungen. Einerseits wird vom Neukauf von Mobiltelefonen oder Kleidungsstücken explizit abgeraten. Andererseits wird erklärt, wie die gekauften Produkte recycelt werden können. Die Kundin oder der Kunde nutzt damit einen Service, der weitgehend nachhaltige Mobiltelefonie oder Outdoor-Kleidung sicherstellt, aber dabei die Verkäufe von Ressourcen minimiert. Das zugrundeliegende Geschäftsmodell unterscheidet sich deutlich von auf materiellen Durchsatz ausgerichteten Konzepten.</p>
+<p>Kate Raworth <span class="citation" data-cites="raworthDoughnutEconomicsSeven2017">(<a href="#ref-raworthDoughnutEconomicsSeven2017" role="doc-biblioref">2017</a>)</span> stellt in ihrem Buch über die Doughnut-Wirtschaft ausführlich dar, wie Komponenten eine regenerativen Wirtschaft designt werden müssen. Sie geben den Systemen, in die sie eingebettet sind, mehr zurück, als sie ihnen entnehmen. Regenerativität ist mehr als Kreislaufwirtschaft oder <em>cradle-to-cradle</em>. Bei Kreislauf-förmigen Organisationen ist nicht zu vermeiden, dass ein Teil des verwendeten Materials und ein Teil der verwendeten Energie verloren geht.</p>
+<p>Eine Kreislauf-Wirtschaft, die aus vielen solcher Prozesse besteht, wird also ihre Umwelt weiter belasten – wenn auch nicht so schwer, wie es die heutigen Wirtschaftsprozesse tun. Dieser Belastung oder diesem Schwund gegenüber kann aber stehen, dass die Umwelt, der Ressourcen entnommen werden, ihrerseits wiederum von wirtschaftlichen Prozessen profitiert. Damit schafft man für die Umwelt das, was in der Wirtschaftslehre als <em>Wealth</em>, als Reichtum bezeichnet wird. Das Prinzip, so zu handeln, dass die Umwelt mehr profitiert als leidet, bezeichnet Raworth als <em>Großzügigkeit</em>, <em>generosity</em>. Großzügigkeit ist kein Rezept für ein perpetumm mobile. Sie hebt den Verlust von Ressourcen durch wirtschaftliche Tätigkeit nicht auf. Sie kompensiert ihn aber auf evolutionärem Weg.</p>
+<p>In einer Situation, in der planetare Grenzen mit drohenden katastrophalen Konsequenzen überschritten werden, ist Regenerativität erforderlich, um wenigstens einige der Folgen der <em>großen Beschleunigung</em> rückgängig zu machen. So kann kein Szenario für die Einhaltung des 1,5°-Ziels ganz darauf verzichten, der Atmosphäre wieder CO2 zu entziehen <span class="citation" data-cites="ipccSummaryPolicymakers2022">(<a href="#ref-ipccSummaryPolicymakers2022" role="doc-biblioref">IPCC, 2022</a>)</span>. Der Verlust der Biodiversität verlangt nach der Wiederherstellung wilder Gebiete, in denen die Artenvielfalt wieder zunehmen kann <span class="citation" data-cites="HalfEarthProjectWilson">(<a href="#ref-HalfEarthProjectWilson" role="doc-biblioref"><em>Half-Earth Project - E.O. Wilson Biodiversity Foundation</em>, n.d.</a>)</span>.</p>
+<p>Kommunikativ unterscheidet sich Regenerativität von der bloß negativen Bestimmung ökologischer Ziele. Sie schafft einen Reichtum, von dem auch die Menschen profitieren, die an den regenerativen Prozessen teilnehmen – z.B. den Reichtum von Kulturlandschaften.</p>
+<p>Eine Contentstrategie, die Teil regenerativer Services ist, geht damit über den Bereich des Designs für nur menschliche User hinaus. Ein solches <em>posthumanistisches</em> Design wird in der Designtheorie seit einigen Jahren intensiv diskutiert <span class="citation" data-cites="forlanoDecenteringHumanDesign2016">(<a href="#ref-forlanoDecenteringHumanDesign2016" role="doc-biblioref">Forlano, 2016</a>)</span>.</p>
+</section>
+<section id="content-und-communitybildung" class="level3">
+<h3>Content und Communitybildung</h3>
+<p>Wenn man von der oft zitierten Hierarchie von Daten, Information und Wissen, der „DIKWPyramid“ <span class="citation" data-cites="DIKWPyramid2022">(<a href="#ref-DIKWPyramid2022" role="doc-biblioref"><span>“DIKW Pyramid,”</span> 2022</a>)</span>, ausgeht, dann gehören die bisher angesprochenden Aspekte von Contentstrategien für das Doughnut vor allem zu den Ebenen der Daten (Transparenz über Ressourcenverbrauch) und der Information (Design von Inhalten für regenerative Services). Diese beiden Ebenen müssen auch bei einer Contentstrategie für die Doughnut-Wirtschaft in eine Schicht oder Ebene des kollektiven Wissens eingebettet sein – vielleicht auch in die der <em>Weisheit</em>, die oft als vierte Ebene der Hierarchie angeführt wird.</p>
+<p>Regenerative Versorgungssysteme sind auf die Aktivität ihrer Benutzerinnen und Benutzer angewiesen. Sie setzen meist gemeinsame Verantwortung für Ressourcen voraus. Lokale Versorgungssysteme sind oft so komplex und individuell, dass Beteiligung von Communities an ihrem Management und ihrer Entwicklung nötig ist. Inhalte, die solche Versorgungssysteme unterstützen, müssen deshalb einem Ethos der Verantwortung entsprechen – nicht um die Nutzerinnen und Nutzer zu erziehen, sondern um mit ihnen einen gemeinsamen Bezugsrahmen zu teilen.</p>
+<p>Die ethischen Implikationen von Inhalten sind ein in der Contentstrategie selten behandeltes Thema – so wie leider auch der Wahhrheitsanspruch von Inhalten. Dabei funktionieren Inhalte nicht ohne eine ethische Dimension, in der sowohl die Sendenden wie die Empfangenden engagiert sind <span class="citation" data-cites="fontanillePratiqueEthiqueTheorie2008">(<a href="#ref-fontanillePratiqueEthiqueTheorie2008" role="doc-biblioref">Fontanille, 2008</a>)</span>. Was wir oft mit dem Modewort „Narrativ“ bezeichnen, lässt sich nicht von den Verbindungen der Inhalte zu den Handlungen ihrer Urheber und der von ihnen Adressierten lösen. Damit untrennbar verbunden sind die Dimensionen der Wahrhaftigkeit und der Glaubwürdigkeit von Inhalten.</p>
+</section>
+<section id="contentdesign-ohne-ressourcenverschwendung" class="level3">
+<h3>Contentdesign ohne Ressourcenverschwendung</h3>
+<p>Ich habe drei Eigenschaften der Contentstrategie in einer Doughnut-Wirtschaft diskutiert, die ihre Aufgaben betreffen: Transparenz über den Verbrauch von Ressourcen sicherzustellen, Inhalte für ökosystemfreundliche, regenerative Services zu designen und Communities dabei zu unterstützen, die Systeme, von denen ihr Leben abhängt, gemeinsam zu pflegen und zu entwickeln. Eine weitere Eigenschaft betrifft das Instrumentarium, mit dem die Contentstrategie diese Aufgaben erfüllt: Sie muss selbst regenerativ vorgehen. Sie darf nicht dazu beitragen, die Masse des <em>digital waste</em> noch zu vergrößern <span class="citation" data-cites="mcgovernWorldWideWaste2020">(<a href="#ref-mcgovernWorldWideWaste2020" role="doc-biblioref">McGovern, 2020</a>)</span>. Das betrifft einerseits die Menge der Energie und der Hardware, die für die Produktion und Nutzung von Inhalten nötig ist, für die Contentstrategien entwickelt werden, und das betrifft andererseits die Wiedernutzbarkeit dieser Inhalte selbst.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>Der ökologische Fußabdruck des Netzes wird nach wie vor nicht genug diskutiert. Insgesamt verbraucht das Internet mehr Energie, als alle erneuerbaren Energiequellen zur Verfügung stellen, und das mit steigender Tendenz. Wie bei der Flug- und der Bauindustrie weisen auch die Vertreterinnen und Vertreter der Digitalwirtschaft gerne darauf hin, dass ihre Branche insgesamt relativ klein sei und sich dekarbonisieren werde. Allerdings werden gerade in dieser Branche die Fortschritte in der Effizienz der Energiegewinnung durch Rebound-Effekte aufgefressen – abgesehen von ökologisch katastrophalen Entwicklungen wie dem Bitcoin-Boom. Für die Contentstrategie ergibt sich daraus die Forderung, den Energiebedarf für Inhalte zu minimieren – also mit so wenig Daten wie möglich auszukommen – und Inhalte so zu konzipieren, dass sie sich auch mit älteren Devices nutzen lassen, so dass die Inhalte nicht zum Zwang zur permanenten Erneuerung digitaler Geräte beitragen. Durch die Unterstützung eines <em>content first designs</em>, wie es den Anforderungen der Contentstrategie ohnehin entspricht, kann sie erheblich dazu beitragen, dass so wenig Daten wie möglich durch das Netz geschickt werden, und dass man diese Daten auch auf einfachen Geräten nutzen kann. Außerdem sind Contentstrateginnen und -strategen dafür mitveranwortlich, dass Inhalte nicht indirekt ökologisch und sozial negative Folgen haben, dass zu ihrer Nutzung also nicht Massen von Userdaten erhoben und für den Vertrieb ressourcenfressender Angebote weiterverwendet werden.</p>
+<p>Zur Ressourcenschonung trägt außerdem Minimalismus in Bezug auf die Erzeugung von Inhalten und Orientierung auf Dauerhaftigkeit bei. Je weniger Inhalte erzeugt werden, je leichter ihre Wiederverwendung gemacht wird, und je länger sie genutzt werden können, desto weniger Ressourcen verbrauchen sie. Contentstrategie ist als Disziplin vor allem entstanden ist, um die Wiederverwenbarkeit und die Qualität von Inhalten sicherzustellen. Der ökologisch sinnvolle Minimalismus ist deshalb für sie keine willkürliche Forderung, sondern ergänzt bereits bestehende Anforderungen an Inhalte.</p>
+</section>
+<section id="schlussbemerkung" class="level3">
+<h3>Schlussbemerkung</h3>
+<p>Ich habe mich in diesem Aufsatz auf Contentstrategie als Teil des Service-Designs konzentriert und versucht, ihren Beitrag zu regenerativen Versorgungssystemen in einer Doughnut Economy zu charakterisieren. Im Augenblick arbeiten nur wenige Contentstraginnen und -strategen in Rollen, die auch nur entfernt diesem Konzept entsprechen. Es hängt von vielen Faktoren ab, ob die Entmachtung der fossilen Industrien und die Transformation zu einer nachhaltigen Wirtschaft noch rechtzeitig gelingt und das Risiko eines Kollaps der Zivilisation verringert werden kann. Als Mitverantwortliche haben in der Contentstrategie Tätige aber viele Möglichkeiten, in Unternehmen und Organisationen die Verlogenheit von Inhalten in Frage zu stellen, die zur Ausbeutung von Ressourcen und zum globalen wirtschaftlichen Ungleichgewicht beitragen. Sie können rebellieren, so wie es viele Angestellte von Amazon <span class="citation" data-cites="taftGrowingClimateRebellion2019">(<a href="#ref-taftGrowingClimateRebellion2019" role="doc-biblioref">Taft, 2019</a>)</span> oder Google <span class="citation" data-cites="hamiltonGoogleEmployeeActivists2020">(<a href="#ref-hamiltonGoogleEmployeeActivists2020" role="doc-biblioref">Hamilton, 2020</a>)</span> gezeigt haben. Bisher haben dazu noch nicht viele Content-Verantwortliche den Mut. Je mehr sie die fehlende Nachhaltigkeit der Wirtschaftsprozesse erkennen, in die sie eingebunden sind, desto eher werden sie sich zusammenschließen und für Alternativen kämpfen. Dazu soll auch dieser Beitrag ermutigen.</p>
+</section>
+<section id="nachweise" class="level3 unnumbered">
+<h3 class="unnumbered">Nachweise</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-batovaIntroductionSpecialIssue2016" class="csl-entry" role="doc-biblioentry">
+Batova, T., &amp; Andersen, R. (2016). Introduction to the Special Issue: Content Strategy— A Unifying Vision. <em>IEEE TRANSACTIONS ON PROFESSIONAL COMMUNICATION</em>, <em>59</em>(1), 5.
+</div>
+<div id="ref-DIKWPyramid2022" class="csl-entry" role="doc-biblioentry">
+DIKW pyramid. (2022). In <em>Wikipedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=DIKW_pyramid&amp;oldid=1084095902">https://en.wikipedia.org/w/index.php?title=DIKW_pyramid&amp;oldid=1084095902</a>
+</div>
+<div id="ref-doughnuteconomicsactionlabAmsterdamCityDoughnut2020" class="csl-entry" role="doc-biblioentry">
+Doughnut Economics Action Lab. (2020). <em>Amsterdam City Doughnut</em>. <a href="https://assets.amsterdam.nl/publish/pages/867635/amsterdam-city-doughnut.pdf">https://assets.amsterdam.nl/publish/pages/867635/amsterdam-city-doughnut.pdf</a>
+</div>
+<div id="ref-FairphoneSmartphoneSich" class="csl-entry" role="doc-biblioentry">
+<em>Fairphone | Das Smartphone, das sich für Mensch und Umwelt einsetzt</em>. (n.d.). Fairphone. Retrieved May 31, 2022, from <a href="https://www.fairphone.com/de/">https://www.fairphone.com/de/</a>
+</div>
+<div id="ref-fischerKlimaKommunikation202022" class="csl-entry" role="doc-biblioentry">
+Fischer, H. M., Kühnelt, W., &amp; Wolkinger, T. (Eds.). (2022). <em>Das Klima der Kommunikation: 20 Thesen für heisse Zeiten</em>. dbv-Verlag (Österreich).
+</div>
+<div id="ref-fontanillePratiqueEthiqueTheorie2008" class="csl-entry" role="doc-biblioentry">
+Fontanille, J. (2008). Pratique et éthique: La théorie du lien. <em>Protée</em>, <em>36</em>(2), 11–26. <a href="https://doi.org/10.7202/019016ar">https://doi.org/10.7202/019016ar</a>
+</div>
+<div id="ref-forlanoDecenteringHumanDesign2016" class="csl-entry" role="doc-biblioentry">
+Forlano, L. (2016). Decentering the Human in the Design of Collaborative Cities. <em>Design Issues</em>, <em>32</em>(3), 42–54. <a href="https://doi.org/10.1162/DESI_a_00398">https://doi.org/10.1162/DESI_a_00398</a>
+</div>
+<div id="ref-frankfurtBullshit2013" class="csl-entry" role="doc-biblioentry">
+Frankfurt, H. G. (2013). <em>Bullshit</em> (M. Bischoff, Trans.; 5 Aufl). Suhrkamp.
+</div>
+<div id="ref-HalfEarthProjectWilson" class="csl-entry" role="doc-biblioentry">
+<em>Half-Earth Project - E.O. Wilson Biodiversity Foundation</em>. (n.d.). Half-Earth. Retrieved May 30, 2022, from <a href="https://www.half-earthproject.org/">https://www.half-earthproject.org/</a>
+</div>
+<div id="ref-hamiltonGoogleEmployeeActivists2020" class="csl-entry" role="doc-biblioentry">
+Hamilton, I. A. (2020, September 15). <em>Google employee activists say the company’s 2030 zero-emissions pledge is good, but doesn’t go far enough</em>. Business Insider. <a href="https://www.businessinsider.com/google-internal-activists-climate-change-2020-9">https://www.businessinsider.com/google-internal-activists-climate-change-2020-9</a>
+</div>
+<div id="ref-ipccSummaryPolicymakers2022" class="csl-entry" role="doc-biblioentry">
+IPCC (Ed.). (2022). Summary for Policymakers. In <em>Climate Change 2022 – Mitigation of Climate Change. Working Group III Contribution to the IPCC Sixth Assessment Report (AR6)</em>. <a href="https://report.ipcc.ch/ar6wg3/pdf/IPCC_AR6_WGIII_SummaryForPolicymakers.pdf">https://report.ipcc.ch/ar6wg3/pdf/IPCC_AR6_WGIII_SummaryForPolicymakers.pdf</a>
+</div>
+<div id="ref-LivingWellLimits" class="csl-entry" role="doc-biblioentry">
+<em>Living Well Within Limits [LiLi] : Homepage of the LiLi Leverhulme Research Leadership Award Project</em>. (n.d.). Retrieved May 30, 2022, from <a href="https://lili.leeds.ac.uk/">https://lili.leeds.ac.uk/</a>
+</div>
+<div id="ref-mcgovernWorldWideWaste2020" class="csl-entry" role="doc-biblioentry">
+McGovern, G. (2020). <em>World Wide Waste: how digital is killing our planet-and what we can do about it.</em> (Epub, First Edition). Silver Beach Publishing. <a href="https://www.lulu.com/shop/gerry-mcgovern/shop/gerry-mcgovern/world-wide-waste-how-digital-is-killing-our-planetand-what-we-can-do-about-it/ebook/product-1rzjem49.html?page=1&amp;pageSize=4">https://www.lulu.com/shop/gerry-mcgovern/shop/gerry-mcgovern/world-wide-waste-how-digital-is-killing-our-planetand-what-we-can-do-about-it/ebook/product-1rzjem49.html?page=1&amp;pageSize=4</a>
+</div>
+<div id="ref-mitchellCarbonDemocracyPolitical2011" class="csl-entry" role="doc-biblioentry">
+Mitchell, T. (2011). <em>Carbon democracy: political power in the age of oil</em>. <a href="http://public.ebookcentral.proquest.com/choice/publicfullrecord.aspx?p=5252115">http://public.ebookcentral.proquest.com/choice/publicfullrecord.aspx?p=5252115</a>
+</div>
+<div id="ref-mitchellBodyPoliticThat2020" class="csl-entry" role="doc-biblioentry">
+Mitchell, T. (2020). The Body Politic that Captured the Future. In <em>A Book of the Body Politic</em> (pp. 49–74). Fondazione Giorgio Cini. <a href="https://www.cini.it/wp-content/uploads/2020/03/BODY-POLITICS-complete-Online.pdf">https://www.cini.it/wp-content/uploads/2020/03/BODY-POLITICS-complete-Online.pdf</a>
+</div>
+<div id="ref-oneillGoodLifeAll2018" class="csl-entry" role="doc-biblioentry">
+O’Neill, D. W., Fanning, A. L., Lamb, W. F., &amp; Steinberger, J. K. (2018). A good life for all within planetary boundaries. <em>Nature Sustainability</em>, <em>1</em>(2), 88–95. <a href="https://doi.org/10.1038/s41893-018-0021-4">https://doi.org/10.1038/s41893-018-0021-4</a>
+</div>
+<div id="ref-ostromPolycentricSystemsCoping2010" class="csl-entry" role="doc-biblioentry">
+Ostrom, E. (2010). Polycentric systems for coping with collective action and global environmental change. <em>Global Environmental Change</em>, <em>20</em>(4), 550–557. <a href="https://doi.org/10.1016/j.gloenvcha.2010.07.004">https://doi.org/10.1016/j.gloenvcha.2010.07.004</a>
+</div>
+<div id="ref-PatagoniaOutdoorBekleidungAusruestung" class="csl-entry" role="doc-biblioentry">
+<em>Patagonia Outdoor-Bekleidung &amp; Ausrüstung</em>. (n.d.). Retrieved May 30, 2022, from <a href="https://eu.patagonia.com/at/de/home/">https://eu.patagonia.com/at/de/home/</a>
+</div>
+<div id="ref-perssonOutsideSafeOperating2022" class="csl-entry" role="doc-biblioentry">
+Persson, L., Carney Almroth, B. M., Collins, C. D., Cornell, S., de Wit, C. A., Diamond, M. L., Fantke, P., Hassellöv, M., MacLeod, M., Ryberg, M. W., Søgaard Jørgensen, P., Villarrubia-Gómez, P., Wang, Z., &amp; Hauschild, M. Z. (2022). Outside the Safe Operating Space of the Planetary Boundary for Novel Entities. <em>Environmental Science &amp; Technology</em>, <em>56</em>(3), 1510–1521. <a href="https://doi.org/10.1021/acs.est.1c04158">https://doi.org/10.1021/acs.est.1c04158</a>
+</div>
+<div id="ref-raworthDoughnutEconomicsSeven2017" class="csl-entry" role="doc-biblioentry">
+Raworth, K. (2017). <em>Doughnut economics: seven ways to think like a 21st century economist</em>. Chelsea Green Publishing.
+</div>
+<div id="ref-steffenTrajectoryAnthropoceneGreat2015" class="csl-entry" role="doc-biblioentry">
+Steffen, W., Broadgate, W., Deutsch, L., Gaffney, O., &amp; Ludwig, C. (2015). The trajectory of the Anthropocene: The Great Acceleration. <em>The Anthropocene Review</em>, <em>2</em>(1), 81–98. <a href="https://doi.org/10.1177/2053019614564785">https://doi.org/10.1177/2053019614564785</a>
+</div>
+<div id="ref-steffenPlanetaryBoundariesGuiding2015" class="csl-entry" role="doc-biblioentry">
+Steffen, W., Richardson, K., Rockstrom, J., Cornell, S. E., Fetzer, I., Bennett, E. M., Biggs, R., Carpenter, S. R., de Vries, W., de Wit, C. A., Folke, C., Gerten, D., Heinke, J., Mace, G. M., Persson, L. M., Ramanathan, V., Reyers, B., &amp; Sorlin, S. (2015). Planetary boundaries: Guiding human development on a changing planet. <em>Science</em>, <em>347</em>(6223), 1259855–1259855. <a href="https://doi.org/10.1126/science.1259855">https://doi.org/10.1126/science.1259855</a>
+</div>
+<div id="ref-steffenTrajectoriesEarthSystem2018" class="csl-entry" role="doc-biblioentry">
+Steffen, W., Rockström, J., Richardson, K., Lenton, T. M., Folke, C., Liverman, D., Summerhayes, C. P., Barnosky, A. D., Cornell, S. E., Crucifix, M., Donges, J. F., Fetzer, I., Lade, S. J., Scheffer, M., Winkelmann, R., &amp; Schellnhuber, H. J. (2018). Trajectories of the Earth System in the Anthropocene. <em>Proceedings of the National Academy of Sciences</em>, <em>115</em>(33), 8252–8259. <a href="https://doi.org/10.1073/pnas.1810141115">https://doi.org/10.1073/pnas.1810141115</a>
+</div>
+<div id="ref-taftGrowingClimateRebellion2019" class="csl-entry" role="doc-biblioentry">
+Taft, M. (2019, June 10). <em>Inside the growing climate rebellion at Amazon</em>. Fast Company. <a href="https://www.fastcompany.com/90361180/inside-the-growing-climate-rebellion-at-amazon">https://www.fastcompany.com/90361180/inside-the-growing-climate-rebellion-at-amazon</a>
+</div>
+<div id="ref-17GOALSSustainable" class="csl-entry" role="doc-biblioentry">
+<em>THE 17 GOALS | Sustainable Development</em>. (n.d.). Retrieved May 31, 2022, from <a href="https://sdgs.un.org/goals">https://sdgs.un.org/goals</a>
+</div>
+<div id="ref-KickItManifesto2010" class="csl-entry" role="doc-biblioentry">
+<em>The Kick It Over Manifesto</em>. (2010, October 24). Climate &amp; Capitalism. <a href="https://climateandcapitalism.com/2010/10/24/against-mainstream-economics-the-kick-it-over-manifesto/">https://climateandcapitalism.com/2010/10/24/against-mainstream-economics-the-kick-it-over-manifesto/</a>
+</div>
+<div id="ref-vogelSocioeconomicConditionsSatisfying2021" class="csl-entry" role="doc-biblioentry">
+Vogel, J., Steinberger, J. K., O’Neill, D. W., Lamb, W. F., &amp; Krishnakumar, J. (2021). Socio-economic conditions for satisfying human needs at low energy use: An international analysis of social provisioning. <em>Global Environmental Change</em>, 102287. <a href="https://doi.org/10.1016/j.gloenvcha.2021.102287">https://doi.org/10.1016/j.gloenvcha.2021.102287</a>
+</div>
+<div id="ref-wang-erlandssonPlanetaryBoundaryGreen2022" class="csl-entry" role="doc-biblioentry">
+Wang-Erlandsson, L., Tobian, A., van der Ent, R. J., Fetzer, I., te Wierik, S., Porkka, M., Staal, A., Jaramillo, F., Dahlmann, H., Singh, C., Greve, P., Gerten, D., Keys, P. W., Gleeson, T., Cornell, S. E., Steffen, W., Bai, X., &amp; Rockström, J. (2022). A planetary boundary for green water. <em>Nature Reviews Earth &amp; Environment</em>. <a href="https://doi.org/10.1038/s43017-022-00287-8">https://doi.org/10.1038/s43017-022-00287-8</a>
+</div>
+<div id="ref-wittenbrinkContentStrategieAlsService2018" class="csl-entry" role="doc-biblioentry">
+Wittenbrink, H. (2018, May 8). Content-Strategie als Service Design. <em>Lost and Found</em>. <a href="https://wittenbrink.net/content-strategie-als-service-design/">https://wittenbrink.net/content-strategie-als-service-design/</a>
+</div>
+<div id="ref-wittenbrinkZwischenResilienzUnd2021" class="csl-entry" role="doc-biblioentry">
+Wittenbrink, H. (2021). Zwischen Resilienz und Regeneration. In B. Lurz, W. Schlag, &amp; T. Wolkinger (Eds.), <em>Playbook Klimakultur. Strategien für einen nachhaltigen Kulturwandel</em> (pp. 145–150). Bundesministerium für europäische und internationale Angelegenheiten – Sektion für internationale Kulturangelegenheiten. <a href="https://www.bmeia.gv.at/fileadmin/user_upload/Zentrale/Kultur/Publikationen/Playbook_Klimakultur_Web_20210910.pdf">https://www.bmeia.gv.at/fileadmin/user_upload/Zentrale/Kultur/Publikationen/Playbook_Klimakultur_Web_20210910.pdf</a>
+</div>
+<div id="ref-wittenbrinkContentstrategienFuerDoughnut2022" class="csl-entry" role="doc-biblioentry">
+Wittenbrink, H. (2022). Contentstrategien für den Doughnut. In H. M. Fischer, F. H. Joanneum Graz, &amp; T. Wolkinger (Eds.), <em>Das Klima der Kommunikation: 20 Thesen für heisse Zeiten</em> (pp. 179–195). dbv-Verlag (Österreich).
+</div>
+</div>
+</section>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Dieser Aufsatz ist gedruckt in dem Buch „Das Klima der Kommunikation“ <span class="citation" data-cites="fischerKlimaKommunikation202022">(<a href="#ref-fischerKlimaKommunikation202022" role="doc-biblioref">Fischer et al., 2022</a>)</span> erschienen <span class="citation" data-cites="wittenbrinkContentstrategienFuerDoughnut2022">(<a href="#ref-wittenbrinkContentstrategienFuerDoughnut2022" role="doc-biblioref">Wittenbrink, 2022</a>)</span>. Diese digitale Version entspricht bis auf die dort in den Fließtext integrierten Anmerkungen der gedruckten Version.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Als <em>great acceleration</em> bezeichnen viele Erdsystemwissenschaftler:innen das parallele exponentielle Wachstum vieler wichtiger Indikatoren für ökologische Belastungen und wirtschaftliche Entwicklung ab 1950 <span class="citation" data-cites="steffenTrajectoryAnthropoceneGreat2015">(<a href="#ref-steffenTrajectoryAnthropoceneGreat2015" role="doc-biblioref">Steffen, Broadgate, et al., 2015</a>)</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Es geht bei Kate Raworth um die Ziele der Sustainable Development Goals, nicht um ihre Formulierung im Detail. Grünes Wachstum, wie es in den Sustainable Development Goals gefordert wird, widerspricht Raworth’s wachstums-agnostischen Ansatz.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>Die rein virtuelle Realität der digitalen Medien erleichtert die Illusion, dass man sich der Frage von Wahrheit und Falschheit von Inhalten völlig entziehen könne. Content wird dann, wie es Harry G. Frankfurt genannt hat, <em>Bullshit</em> <span class="citation" data-cites="frankfurtBullshit2013">(<a href="#ref-frankfurtBullshit2013" role="doc-biblioref">Frankfurt, 2013</a>)</span>. Bullshit ist nicht einfach falsch, sondern seine Wahrheit oder Falschheit ist irrelevant.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>[Anmerkung, nicht in die Buchpublikation aufgenommen:] Detaillierter habe ich mich mit den ökologischen Folgen digitaler Mediennutzung und Möglichkeiten zu ihrer Reduktion in einem Beitrag für das <em>Playbook Klimakultur</em> beschäftigt <span class="citation" data-cites="wittenbrinkZwischenResilienzUnd2021">(<a href="#ref-wittenbrinkZwischenResilienzUnd2021" role="doc-biblioref">Wittenbrink, 2021</a>)</span>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
